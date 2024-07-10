@@ -65,6 +65,16 @@
 
 
     <section class="services container">
+        <h2 class="text-centered">Opinie</h2>
+        <div class="projects">
+            <SingleReview title="Best Of Cars" content="Polecam serdecznie!" />
+            <SingleReview title="Webintegro" content="Współpracujemy od lat!" />
+            <SingleReview title="AmitieButik" content="Profejsonalizm na każdym kroku!" />
+        </div>
+    </section>
+
+    <section class="services container">
+        <Form />
     </section>
   </template>
 
@@ -76,13 +86,15 @@ import step from '~/components/elements/step.vue';
 import circleImage from '~/components/elements/circleImage.vue';
 import SingleProject from '~/components/elements/singleProject.vue';
 import Form from '~/components/elements/Form.vue';
+import SingleReview from '~/components/elements/singleReview.vue';
 export default{
     components:{
         service,
         step,
         circleImage,
         SingleProject,
-        Form
+        Form,
+        SingleReview
     }
 }
 </script>

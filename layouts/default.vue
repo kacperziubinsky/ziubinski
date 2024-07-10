@@ -2,15 +2,18 @@
     <div>
       <Header />
       <slot />
+      <Footer />
     </div>
   </template>
   
   <script>
-  import Header from '~/components/struct/header.vue';
+  import Footer from '~/components/struct/footer.vue';
+import Header from '~/components/struct/header.vue';
   
   export default {
     components: {
-      Header
+      Header,
+      Footer
     }
   }
   </script>

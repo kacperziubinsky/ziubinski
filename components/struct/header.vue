@@ -1,6 +1,6 @@
 <template>
      <header>
-        <h1>Kacper Ziubiński</h1>
+        <img src="~/assets/img/ziub.png" alt="">
         <nav class="menu">
             <li class="menu-item ">
                 <a href="#">Strona główna</a>
@@ -30,7 +30,7 @@
     </header>
 </template>
 
-<style>
+<style scoped>
 header{
     background-color: black;
     padding: 2rem 5rem;
@@ -38,6 +38,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    position: sticky;
 }
 nav.menu{
     display: flex;
@@ -63,5 +64,9 @@ nav.menu{
     border-radius: 20px;
     text-decoration: none;
     color: white;
+}
+img{
+    max-height: 75px;
+    filter: brightness(0) invert(1);
 }
 </style>
