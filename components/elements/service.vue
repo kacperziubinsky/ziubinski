@@ -26,15 +26,15 @@ export default {
   },
   data() {
     return {
-      arrowTransform: 'rotate(30deg)' // Initial transform value
+      arrowTransform: 'rotate(30deg)' 
     };
   },
   methods: {
     rotateArrow(isHovered) {
       if (isHovered) {
-        this.arrowTransform = 'rotate(0)'; // Change to 0 degrees on mouseover
+        this.arrowTransform = 'rotate(0)'; 
       } else {
-        this.arrowTransform = 'rotate(30deg)'; // Back to 30 degrees on mouseleave
+        this.arrowTransform = 'rotate(30deg)'; 
       }
     }
   }
@@ -43,10 +43,15 @@ export default {
 
 <style scoped>
 .service {
-  border: 1px solid black;
+  border: 1px solid #ddd;
   padding: 20px;
-  border-radius: 20px;
-  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.service:hover{
+  border: 1px solid black;
 }
 
 .sub-title {
@@ -57,5 +62,6 @@ export default {
   margin-top: 20px;
   height: 20px;
   float: right;
+  transition: all 300ms;
 }
 </style>

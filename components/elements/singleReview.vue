@@ -23,15 +23,15 @@
     },
     data() {
       return {
-        arrowTransform: 'rotate(30deg)' // Initial transform value
+        arrowTransform: 'rotate(30deg)' 
       };
     },
     methods: {
       rotateArrow(isHovered) {
         if (isHovered) {
-          this.arrowTransform = 'rotate(0)'; // Change to 0 degrees on mouseover
+          this.arrowTransform = 'rotate(0)'; 
         } else {
-          this.arrowTransform = 'rotate(180deg)'; // Rotate 180 degrees on mouseleave
+          this.arrowTransform = 'rotate(180deg)'; 
         }
       }
     }
@@ -46,7 +46,6 @@
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
-    background: #f9f9f9;
     text-align: center;
   }
   

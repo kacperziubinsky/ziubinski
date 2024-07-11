@@ -43,7 +43,6 @@ export default {
   name: 'ContactForm',
   methods: {
     handleSubmit() {
-      // Handle form submission logic here
       alert('Form submitted');
     }
   }
@@ -59,7 +58,6 @@ export default {
 }
 
 .contact {
-  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -87,7 +85,6 @@ export default {
 }
 
 .form {
-  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

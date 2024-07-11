@@ -87,5 +87,9 @@
     transform: translateY(-10px);
     opacity: 0;
   }
+  p{
+    line-height: 1.5;
+    font-weight: 700
+  }
   </style>
   

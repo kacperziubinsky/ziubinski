@@ -3,10 +3,11 @@
     margin: 0;
     font-family: "Nunito", sans-serif;
 }
-
-.services{
-    background-color: antiquewhite;
+body{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 46%, rgba(242,250,255,1) 100%);
 }
+
 
 .container{
     padding: 5vh 10vw;
@@ -25,8 +26,10 @@
 .about{
     display: grid;
     grid-template-columns: 50% 50%;
+    column-gap: 50px;
+    row-gap: 50px;
     min-height: 300px;
-    background-color: blanchedalmond;
+    background-color: white;
 }
 
 ::-webkit-scrollbar {
@@ -46,4 +49,9 @@
     column-gap: 50px;
     row-gap: 50px;
     margin-top: 50px;
+}
+.rounded{
+    background-color: white;
+    border-radius: 2vw;
+    margin: 2vh 2vw;
 }
