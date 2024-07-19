@@ -16,12 +16,11 @@
     data() {
       return {
         images: [
-          'https://via.placeholder.com/300x400',
-          'https://via.placeholder.com/300x400',
-          'https://via.placeholder.com/300x400',
-          'https://via.placeholder.com/300x400',
-          'https://via.placeholder.com/300x400',
-          'https://via.placeholder.com/300x400',
+          'https://ziubinski.hostline.net.pl/nowa/img/js.png',
+          'https://ziubinski.hostline.net.pl/nowa/img/nodejs.png',
+          'https://ziubinski.hostline.net.pl/nowa/img/php.png',
+          'https://ziubinski.hostline.net.pl/nowa/img/vue.png',
+          'https://ziubinski.hostline.net.pl/nowa/img/seo.png',
         ],
         radius: 100, 
         centerX: 150,

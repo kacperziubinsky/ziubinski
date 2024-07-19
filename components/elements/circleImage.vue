@@ -26,7 +26,6 @@ export default {
   methods: {
     handleScroll() {
       const scrollY = window.scrollY;
-      console.log(scrollY)
       const minScrollY = 200;
       const maxScrollY = 1100;
       const maxOffset = 200;

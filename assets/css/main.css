@@ -1,11 +1,13 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
 *{
     box-sizing: border-box;
     margin: 0;
     font-family: "Nunito", sans-serif;
 }
+
 body{
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 46%, rgba(242,250,255,1) 100%);
+    background: rgb(238, 238, 238);
+    background: radial-gradient(circle, rgb(238, 238, 238) 46%, rgba(242,250,255,1) 100%);
 }
 
 
@@ -54,4 +56,40 @@ body{
     background-color: white;
     border-radius: 2vw;
     margin: 2vh 2vw;
+}
+.hero{
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    background: white;
+}
+p{
+    line-height: 2;
+}
+
+@media (max-width: 897px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .container{
+        padding: 2.5vh 5vw;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 25px;
+        row-gap: 25px;
+        min-height: 300px;
+        background-color: white;
+    }
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        margin-top: 50px;
+    }
 }

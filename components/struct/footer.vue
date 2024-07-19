@@ -6,12 +6,6 @@
            </li>
            <li class="menu-item ">
                <a href="#">Usługi</a>
-               <ul class="sub-menu">
-                   <li ><a href="#">Strony Internetowe</a></li>
-                   <li><a href="#">Sklepy Internetowe</a></li>
-                   <li><a href="#">Pozycjonowanie Stron</a></li>
-                   <li><a href="#">Aplikacje Webowe</a></li>
-               </ul>
            </li>
            <li class="menu-item ">
                <a href="#">O mnie</a>
@@ -44,6 +38,8 @@ footer{
 }
 nav.menu{
    display: flex;
+   padding: 0;
+   margin: 0;
 }
 .sub-menu{
    position: absolute;
@@ -80,5 +76,21 @@ img{
 .copy a{
     color: white;
     text-decoration: none;
+}
+@media (max-width: 897px) {
+    footer{
+        flex-direction: column;
+    }
+    nav.menu{
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center
+    }
+    .contact-button{
+        margin-top: 20px;
+    }
+    .menu-item{
+        margin-top: 20px;
+    }
 }
 </style>

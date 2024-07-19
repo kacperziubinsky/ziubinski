@@ -32,20 +32,20 @@
         <div class="projects">
             <SingleProject 
             name="Projekt 1"
-            desktop="https://via.placeholder.com/400x300?text=Desktop+Image"
-            mobile="https://via.placeholder.com/300x400?text=Mobile+Image"
+            desktop="https://ziubinski.hostline.net.pl/nowa/img/400x300.png"
+            mobile="https://ziubinski.hostline.net.pl/nowa/img/300x400.png"
             description="To jest opis projektu 1." 
             />
             <SingleProject 
             name="Projekt 1"
-            desktop="https://via.placeholder.com/400x300?text=Desktop+Image"
-            mobile="https://via.placeholder.com/300x400?text=Mobile+Image"
+            desktop="https://ziubinski.hostline.net.pl/nowa/img/400x300.png"
+            mobile="https://ziubinski.hostline.net.pl/nowa/img/300x400.png"
             description="To jest opis projektu 1." 
             />
             <SingleProject 
             name="Projekt 1"
-            desktop="https://via.placeholder.com/400x300?text=Desktop+Image"
-            mobile="https://via.placeholder.com/300x400?text=Mobile+Image"
+            desktop="https://ziubinski.hostline.net.pl/nowa/img/400x300.png"
+            mobile="https://ziubinski.hostline.net.pl/nowa/img/300x400.png"
             description="To jest opis projektu 1." 
             />
         </div>
@@ -104,6 +104,11 @@ export default{
         HeroSection
     }
 }
+
+useSeoMeta({
+  title: 'Agnecja Marketingowa',
+  description: 'Profesjonalne tworzenie stron Internetowych',
+})
 </script>
 
 <style scoped>

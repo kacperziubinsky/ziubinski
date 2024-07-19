@@ -1,16 +1,27 @@
 <template>
-    <div class="grided">
+    <div class="grid">
       <div class="contact">
         <h3>Skontaktuj się ze mną!</h3>
-        <p><strong>Telefon:</strong> <a href="tel:+48123456789">+48 123 456 789</a></p>
-        <p><strong>Email:</strong> <a href="mailto:example@example.com">example@example.com</a></p>
+        <h4><Strong>Dane firmy</Strong></h4>
+        <p><strong>Nazwa: </strong> Kacper Ziubiński</p>
+        <p><strong>NIP: </strong>5322109030</p>
+        <p><strong>REGON: </strong>527302492</p>
+        <p><strong>Adres: </strong>ul. 3 Maja 85, 05-340 Rudzienko        </p>
         <div class="social-media">
-          <h4>Follow me on:</h4>
+          <h4>Kontakt</h4>
+          <div class="contact-info">
           <p>
-            <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a> | 
-            <a href="https://tiktok.com/@yourprofile" target="_blank">TikTok</a> | 
-            <a href="https://messenger.com/yourprofile" target="_blank">Messenger</a>
+            <a href="tel:+48535558333">
+              <i class="fa fa-phone"></i> +48 535 558 333
+            </a>
           </p>
+          <p>
+            <a href="mailto:kontakt@ziubinski.pl">
+              <i class="fa fa-envelope"></i> kontakt@ziubinski.pl
+            </a>
+          </p>
+ 
+        </div>
         </div>
       </div>
       <div class="form">
@@ -51,20 +62,21 @@ export default {
 
 
 <style scoped>
-.grided {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
+
 
 .contact {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
 }
 
 .contact h3 {
   margin-bottom: 15px;
+}
+
+.contact h4{
+  font-size: 1.25rem
 }
 
 .contact p {
@@ -88,6 +100,7 @@ export default {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
 }
 
 .form h3 {
@@ -124,4 +137,25 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.contact-info a{
+  color: black;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.contact-info .fa{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.contact-info p{
+  transition: all 500ms;
+}
+
+.contact-info p:hover{
+  transform: translateY(-1px);
+}
+
 </style>

@@ -47,6 +47,7 @@
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
     text-align: center;
+    background: white;
   }
   
   .service:hover {
