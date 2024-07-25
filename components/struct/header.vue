@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="~/assets/img/ziub.png" alt="Kacper Ziubiński Logo" title="Kacper Ziubiński"@click="$router.push('/')" />
+    <img src="~/assets/img/ziub.webp" alt="Kacper Ziubiński Logo" title="Kacper Ziubiński"@click="$router.push('/')" />
     <button class="menu-toggle" @click="toggleMenu">☰</button>
     <nav ref="menu" :class="{ 'menu': true, 'active': isMenuOpen }">
       <button class="close-menu" @click="toggleMenu">✖</button>

@@ -14,13 +14,13 @@
       <p><strong>Edukacja jest dla mnie kluczowa</strong>. Wierzę, że <i><strong>człowiek, który się nie rozwija, zaczyna się cofać</strong></i>. Dlatego obecnie jestem studentem <strong>Uniwersytetu w Siedlcach</strong>, gdzie nieustannie poszerzam swoje umiejętności, studiując <strong>informatykę</strong>.</p>
     </div>
     <div class="img">
-      <img src="~/assets/img/photo.png" alt="Kacper Ziubiński" title="Kacper Ziubiński" class="page-image circle" />
+      <img src="~/assets/img/photo.webp" alt="Kacper Ziubiński" title="Kacper Ziubiński" class="page-image circle" />
     </div>
   </section>
 
   <section class="grid container">
     <div class="img">
-      <img src="../assets/img/ziub.png" alt="Ziubiński Logo" title="Ziubiński LOGO" class="page-image">
+      <img src="../assets/img/ziub.webp" alt="Ziubiński Logo" title="Ziubiński LOGO" class="page-image">
     </div>
     <div class="text">
       <h2>Profesjonalne Tworzenie Stron</h2>
@@ -30,10 +30,12 @@
 
   <section class="container rounded">
     <div class="grid">
-      <service title="Landing Page" subtitle="Czyli wizytówka" content="Potrzebujesz prostej strony Internetowej, która zachęci użytkownika do interakcji? Rozwiązanie cechuj się niskimi kosztami realizaji!" />
-      <service title="Strona Internetowa" subtitle="Pełnoprawna witryna" content="Strona Internetowa pozwoli na skuteczne przedstawienie Twoich usług, witryna może posiadać wiele zakładek szczegółowo przedstawiając temat." />
-      <service title="Sklep Internetowy" subtitle="Rozwiązanie E-commerce" content="Chcesz zacząć sprzedaż przez Internet? Prowadzisz już biznes online? W gammie moich usług zawarte jest Tworzenie Sklepów Internetowych, w ramach których to skonfiguruję i uruchomię twoją witrynę sprzedażową!" />
-      <service title="Aplikacje webowe" subtitle="Dedykowane oprogramowanie" content="Potrzebujesz nietypowego rozwiązania? Nieszablonowe funkcjonalności? Dzięki naszej współpracy pozyskasz spersonalizowaną aplikację, które będą wspierać rozwój Twojego biznesu!" />
+      <service title="Landing Page" subtitle="Czyli wizytówka" content="Potrzebujesz prostej strony Internetowej, która zachęci użytkownika do interakcji? Rozwiązanie cechuj się niskimi kosztami realizaji!" link="/tworzenie-landing-page"/>
+      <service title="Strona Internetowa" subtitle="Pełnoprawna witryna" content="Strona Internetowa pozwoli na skuteczne przedstawienie Twoich usług, witryna może posiadać wiele zakładek szczegółowo przedstawiając temat." link="/tworzenie-stron-internetowych"/>
+      <service title="Sklep Internetowy" subtitle="Rozwiązanie E-commerce" content="Chcesz zacząć sprzedaż przez Internet? Prowadzisz już biznes online? W gammie moich usług zawarte jest Tworzenie Sklepów Internetowych, w ramach których to skonfiguruję i uruchomię twoją witrynę sprzedażową!" link="/tworzenie-sklepow-internetowych" />
+      <service title="Aplikacje webowe" subtitle="Dedykowane oprogramowanie" content="Potrzebujesz nietypowego rozwiązania? Nieszablonowe funkcjonalności? Dzięki naszej współpracy pozyskasz spersonalizowaną aplikację, które będą wspierać rozwój Twojego biznesu!" link="/tworzenie-aplikacji-webowych" />
+      <service title="Pozycjonowanie SEO" subtitle="Popraw widoczność twojej strony!" content="Twoja witryna nie jest widoczna w sieci? Działania tej usługi poprawią pozycje w rankingach wyszukiwarek, dzięki czemu łatwiej trafi do Internautów." link="/pozycjonowanie-seo" />
+      <service title="Integracja Baselinekr" subtitle="Zautomatyzuj swój e-commerce" content="Usługa tyczy się pełnej Integracji twojego sklepu Internetowego lub portalu sprzedażowego z narzędziem Baselinker." link="/integracja-baselinker" />
     </div>
   </section>
 </template>
@@ -51,7 +53,7 @@ useSeoMeta({
   title: 'Tworzenie Stron Internetowych - Profesjonalne Usługi',
   description: 'Profesjonalne tworzenie stron internetowych, które pomogą Ci dotrzeć do nowych klientów i zwiększyć widoczność Twojego biznesu online. Skontaktuj się z nami, aby dowiedzieć się więcej!',
   keywords: ['tworzenie stron internetowych', 'profesjonalne usługi webowe', 'Kacper Ziubiński'],
-  image: 'https://twojastrona.com/your-image-url.png',
+  image: 'https://ziubinski.pl/socialmedia-image.jpg',
   url: 'https://twojastrona.com/tworzenie-stron-internetowych'
 });
 
@@ -62,7 +64,7 @@ definePageMeta({
     '@type': 'Person',
     name: 'Kacper Ziubiński',
     description: 'Specjalizuję się w profesjonalnym tworzeniu stron internetowych od kilku lat, zawsze dbając o najwyższą jakość na każdym etapie procesu, aby spełnić oczekiwania klienta.',
-    image: 'https://twojastrona.com/your-image-url.png',
+    image: 'https://ziubinski.pl/socialmedia-image.jpg',
     alumniOf: {
       '@type': 'CollegeOrUniversity',
       name: 'Uniwersytet w Siedlcach'
@@ -74,7 +76,7 @@ definePageMeta({
     meta: [
       { property: 'og:title', content: 'Tworzenie Stron Internetowych - Profesjonalne Usługi' },
       { property: 'og:description', content: 'Profesjonalne tworzenie stron internetowych, które pomogą Ci dotrzeć do nowych klientów i zwiększyć widoczność Twojego biznesu online. Skontaktuj się z nami, aby dowiedzieć się więcej!' },
-      { property: 'og:image', content: 'https://twojastrona.com/your-image-url.png' },
+      { property: 'og:image', content: 'https://ziubinski.pl/socialmedia-image.jpg' },
       { property: 'og:url', content: 'https://twojastrona.com/tworzenie-stron-internetowych' },
       { property: 'og:site_name', content: 'Kacper Ziubiński' },
       { name: 'robots', content: 'index, follow' }

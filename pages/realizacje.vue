@@ -38,8 +38,8 @@ useSeoMeta({
   title: 'Portfolio - Kacper Ziubiński',
   description: 'Poznaj ostatnio zrealizowane projekty. Skontaktuj się ze mną, aby dowiedzieć się więcej!',
   keywords: ['portfolio', 'projekty', 'ziubiński', 'strony internetowe'],
-  image: 'https://ziubinski.hostline.net.pl/nowa/img/400x300.png',
-  url: 'https://twojastrona.com/realizacje'
+  image: 'https://ziubinski.pl/socialmedia-image.jpg',
+  url: 'https://ziubinski.pl/realizacje'
 });
 
 // Wczytywanie danych z JSON

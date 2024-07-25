@@ -1,5 +1,10 @@
 <template>
-  <div class="service" @mouseover="rotateArrow(true)" @mouseleave="rotateArrow(false)" data-aos="zoom-in">
+  <div class="service" 
+       @mouseover="rotateArrow(true)" 
+       @mouseleave="rotateArrow(false)" 
+       @click="navigateTo"
+       :data-aos="dataAos"
+       style="cursor: pointer;">
     <h2>{{ title }}</h2>
     <span class="sub-title">{{ subtitle }}</span>
     <p>{{ content }}</p>
@@ -22,6 +27,14 @@ export default {
     content: {
       type: String,
       required: false
+    },
+    link: {
+      type: String,
+      required: true
+    },
+    dataAos: {
+      type: String,
+      default: 'zoom-in'
     }
   },
   data() {
@@ -31,11 +44,10 @@ export default {
   },
   methods: {
     rotateArrow(isHovered) {
-      if (isHovered) {
-        this.arrowTransform = 'rotate(0)'; 
-      } else {
-        this.arrowTransform = 'rotate(30deg)'; 
-      }
+      this.arrowTransform = isHovered ? 'rotate(0)' : 'rotate(30deg)';
+    },
+    navigateTo() {
+      window.location.href = this.link; 
     }
   }
 };
@@ -51,7 +63,7 @@ export default {
   background-color: white;
 }
 
-.service:hover{
+.service:hover {
   border: 1px solid black;
 }
 

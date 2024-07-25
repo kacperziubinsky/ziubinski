@@ -7,7 +7,7 @@
 
   <section class="grid container">
     <div class="img">
-      <img src="../assets/img/baselinker.png" alt="Co to Baselinker?" title="Co to baselinker?" class="page-image">
+      <img src="../assets/img/baselinker.webp" alt="Co to Baselinker?" title="Co to baselinker?" class="page-image">
     </div>
 
     <div class="text">
@@ -22,14 +22,14 @@
       <p>Poza możliwością obsługi zamówień, Baselinker umożliwia integrację z firmami kurierskimi, co sprawia, że generowanie etykiet oraz zarządzanie statusami przesyłek jest jeszcze prostsze. <strong>Wygeneruj list przewozowy jednym kliknięciem!</strong> Baselinker w swojej ofercie posiada szeroką gamę firm kurierskich, takich jak: <strong>InPost, UPS, FedEx, Orlen Paczka</strong> oraz integrację z <strong>wysyłkami Allegro.</strong></p>
     </div>
     <div class="img">
-      <img src="../assets/img/delivery.png" alt="Integracja Baselinker" title="Integracja Baselinker" class="page-image">
+      <img src="../assets/img/delivery.webp" alt="Integracja Baselinker" title="Integracja Baselinker" class="page-image">
     </div>
   </section>
 
   <div class="rounded">
     <section class="grid container">
       <div class="img">
-        <img src="../assets/img/economic.png" alt="Łączenie baselinker" title="Łączenie baselinker" class="page-image">
+        <img src="../assets/img/economic.webp" alt="Łączenie baselinker" title="Łączenie baselinker" class="page-image">
       </div>
 
       <div class="text">
@@ -44,7 +44,7 @@
         <p>Baselinker umożliwia także integrację z hurtowniami, co pozwala na automatyzację procesów zamówień i synchronizację stanów magazynowych. Dzięki tej funkcji możesz bez trudu zarządzać produktami, zamówieniami i dostawami, co przyspiesza procesy logistyczne i zwiększa efektywność operacyjną Twojego biznesu.</p>
       </div>
       <div class="img">
-        <img src="../assets/img/e-commerce_1.png" alt="Baselinker konfiguracja" title="Baselinker konfiguracja" class="page-image">
+        <img src="../assets/img/e-commerce_1.webp" alt="Baselinker konfiguracja" title="Baselinker konfiguracja" class="page-image">
 
       </div>
     </section>
@@ -63,7 +63,7 @@ useSeoMeta({
   title: 'Integracja Baselinker - Rozwiązania E-commerce',
   description: 'Optymalizuj sprzedaż i zarządzaj zamówieniami dzięki Baselinker. Integracja z popularnymi CMS i platformami sprzedażowymi, łatwe zarządzanie przesyłkami oraz intuicyjny panel użytkownika. Skontaktuj się z nami, aby dowiedzieć się więcej!',
   keywords: ['Integracja Baselinker', 'Rozwiązania E-commerce', 'Integracja sklepów', 'Integracja hurtowni'],
-  image: 'https://ziubinski.hostline.net.pl/nowa/img/400x300.png',
+  image: 'https://ziubinski.pl/socialmedia-image.jpg',
   url: 'https://ziubinski.pl/kontakt'
 });
 
