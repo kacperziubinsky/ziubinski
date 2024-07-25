@@ -2,23 +2,23 @@
     <footer>
        <nav class="menu">
            <li class="menu-item ">
-               <a href="#">Strona główna</a>
+            <NuxtLink to="/">Strona główna</NuxtLink>
            </li>
            <li class="menu-item ">
-               <a href="#">Usługi</a>
+            <NuxtLink to="/o-mnie">Realizacje</NuxtLink>
            </li>
            <li class="menu-item ">
-               <a href="#">O mnie</a>
-           </li>
+            <NuxtLink to="/realizacje">Realizacje</NuxtLink>
+        </li>
            <li class="menu-item ">
-               <a href="#">Portfolio</a>
-           </li>
-           <li class="menu-item ">
-               <a href="#">Kontakt</a>
-           </li>
+            <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+        </li>
+        <li class="menu-item ">
+            <NuxtLink to="/polityka-prywatnosci">Polityka Prywatności</NuxtLink>
+        </li>
        </nav>
        <div class="contact-button">
-           <a href="#">+48 535 558 333</a>
+           <a href="tel:+48535558333">+48 535 558 333</a>
        </div>
     </footer>
     <div class="copy">

@@ -109,8 +109,44 @@ export default{
 
 useSeoMeta({
   title: 'Agnecja Interaktywna',
-  description: 'Kacper Ziubiński - Profesjonalne tworzenie Stron Internetowych.',
+  description: 'Profesjonalne usługi związane z tworzeniem stron Internetowych, Rozwiązań E-commerce. Skontaktuj się z nami, aby dowiedzieć się więcej!',
+  keywords: ['Agencja Interaktywna', 'Kacper ziubiński'],
+  image: 'https://ziubinski.pl/socialmedia-image.jpg',
+  url: 'https://ziubinski.pl/'
 })
+
+definePageMeta({
+  path: '/',
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Agnecja Interaktywna',
+    description: 'Profesjonalne usługi związane z tworzeniem stron Internetowych, Rozwiązań E-commerce. Skontaktuj się z nami, aby dowiedzieć się więcej!',
+    image: 'https://ziubinski.pl/socialmedia-image.jpg',  
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.5',
+      reviewCount: '10'
+    },
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'USD',
+      price: '0',  
+      itemCondition: 'https://schema.org/NewCondition'
+    }
+  },
+  head: {
+    meta: [
+      { property: 'og:title', content: 'Agnecja Interaktywna' },
+      { property: 'og:description', content: 'Profesjonalne usługi związane z tworzeniem stron Internetowych, Rozwiązań E-commerce. Skontaktuj się z nami, aby dowiedzieć się więcej!' },
+      { property: 'og:image', content: 'https://ziubinski.pl/socialmedia-image.jpg' },
+      { property: 'og:url', content: 'https://ziubinski.pl/' },
+      { property: 'og:site_name', content: 'Kacper Ziubiński' },
+      { name: 'robots', content: 'index, follow' }
+
+    ]
+  }
+});
 </script>
 
 <style scoped>

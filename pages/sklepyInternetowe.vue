@@ -7,7 +7,7 @@
 
   <section class="grid container">
     <div class="img">
-      <img src="../assets/img/e-commerce_1.png" alt="Tworzenie Sklepów Internetowych" class="page-image">
+      <img src="../assets/img/e-commerce_1.png" alt="Tworzenie Sklepów Internetowych" title="Tworzenie Sklepów Internetowych" class="page-image">
     </div>
 
     <div class="text">
@@ -22,7 +22,7 @@
       <p>Każdy sklep internetowy, który tworzę, jest unikalny i dostosowany do specyficznych potrzeb klienta. Dzięki mojej wiedzy i doświadczeniu, mogę zagwarantować, że każdy projekt będzie wyróżniał się zarówno pod względem wyglądu, jak i funkcjonalności. <strong>Moje projekty są nie tylko estetyczne, ale także intuicyjne i łatwe w obsłudze</strong>, co przekłada się na wyższą satysfakcję klientów i lepsze wyniki sprzedaży.</p>
     </div>
     <div class="img">
-      <img src="../assets/img/e-commerce_2.png" alt="Jak sprzedawać online?" class="page-image">
+      <img src="../assets/img/e-commerce_2.png" alt="Jak sprzedawać online?" title="Jak sprzedawać online?" class="page-image">
 
     </div>
   </section>
@@ -30,7 +30,7 @@
   <div class="rounded">
     <section class="grid container">
       <div class="img">
-        <img src="../assets/img/e-commerce_4.png" alt="Zarządzanie sklepami Internetowymi" class="page-image">
+        <img src="../assets/img/e-commerce_4.png" alt="Zarządzanie sklepami Internetowymi" title="Zarządzanie sklepami Internetowymi" class="page-image">
 
       </div>
 
@@ -46,7 +46,7 @@
         <p>Oferuję również usługi abonamentowe związane z zarządzaniem sklepami internetowymi. Dzięki temu możesz skupić się na prowadzeniu swojego biznesu, a ja zadbam o aktualizacje, bezpieczeństwo i sprawne działanie Twojego sklepu. <strong>Powierzając mi zarządzanie swoim sklepem, zyskujesz pewność, że wszystko będzie działać bez zarzutu</strong>, a Ty będziesz mógł skoncentrować się na rozwijaniu swojej oferty.</p>
       </div>
       <div class="img">
-        <img src="../assets/img/e-commerce_3.png" alt="Zarządzanie sklepami Internetowymi" class="page-image">
+        <img src="../assets/img/e-commerce_3.png" alt="Zarządzanie sklepami Internetowymi" title="Zarządzanie sklepami Internetowymi" class="page-image">
       </div>
     </section>
   </div>
@@ -61,13 +61,45 @@ const breadcrumbs = [
 ];
 
 useSeoMeta({
-  title: 'Tworzenie Sklepów Internetowych - Profesjonalne Usługi',
-  description: 'Profesjonalne tworzenie sklepów internetowych, które pomogą Ci zwiększyć sprzedaż i dotrzeć do nowych klientów online. Skontaktuj się z nami, aby dowiedzieć się więcej!'
+  title: 'Tworzenie Sklepów Internetowych',
+  description: 'Profesjonalne tworzenie sklepów internetowych, które pomogą Ci zwiększyć sprzedaż i dotrzeć do nowych klientów online. Skontaktuj się z nami, aby dowiedzieć się więcej!',
+  keywords: ['Tworzenie Sklepów Internetowych', 'Projektowanie Sklepów internetowych', 'Sklepy Internetowe', 'Administracja sklepami internetowymi'],
+  image: 'https://ziubinski.pl/socialmedia-image.jpg',
+  url: 'https://ziubinski.pl/tworzenie-sklepow-internetowych'
 })
 
 definePageMeta({
-  path: '/tworzenie-sklepow-internetowych' 
-})
+  path: '/tworzenie-sklepow-internetowych',
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Tworzenie Sklepów Internetowych',
+    description: 'Profesjonalne tworzenie sklepów internetowych, które pomogą Ci zwiększyć sprzedaż i dotrzeć do nowych klientów online. Skontaktuj się z nami, aby dowiedzieć się więcej!',
+    image: 'https://ziubinski.pl/socialmedia-image.jpg',  
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.5',
+      reviewCount: '10'
+    },
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'USD',
+      price: '0',  
+      itemCondition: 'https://schema.org/NewCondition'
+    }
+  },
+  head: {
+    meta: [
+      { property: 'og:title', content: 'Tworzenie Sklepów Internetowych' },
+      { property: 'og:description', content: 'Profesjonalne tworzenie sklepów internetowych, które pomogą Ci zwiększyć sprzedaż i dotrzeć do nowych klientów online. Skontaktuj się z nami, aby dowiedzieć się więcej!' },
+      { property: 'og:image', content: 'https://ziubinski.pl/socialmedia-image.jpg' },
+      { property: 'og:url', content: 'https://ziubinski.pl/tworzenie-sklepow-internetowych' },
+      { property: 'og:site_name', content: 'Kacper Ziubiński' },
+      { name: 'robots', content: 'index, follow' }
+
+    ]
+  }
+});
 </script>
 
 

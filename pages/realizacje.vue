@@ -35,10 +35,11 @@ const breadcrumbs = [
 
 // SEO meta
 useSeoMeta({
-  title: 'Portfolio',
-  description: 'Optymalizuj sprzedaż i zarządzaj zamówieniami dzięki Baselinker. Integracja z popularnymi CMS i platformami sprzedażowymi, łatwe zarządzanie przesyłkami oraz intuicyjny panel użytkownika. Skontaktuj się z nami, aby dowiedzieć się więcej!',
+  title: 'Portfolio - Kacper Ziubiński',
+  description: 'Poznaj ostatnio zrealizowane projekty. Skontaktuj się ze mną, aby dowiedzieć się więcej!',
   keywords: ['portfolio', 'projekty', 'ziubiński', 'strony internetowe'],
   image: 'https://ziubinski.hostline.net.pl/nowa/img/400x300.png',
+  url: 'https://twojastrona.com/realizacje'
 });
 
 // Wczytywanie danych z JSON

@@ -5,6 +5,14 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
+      script: [
+        {
+          id: 'cookieyes',
+          type: 'text/javascript',
+          src: 'https://cdn-cookieyes.com/client_data/f5e0f72d6611e28bf3f27106/script.js',
+          defer: true 
+        }
+      ]
     },
   },
 
@@ -36,6 +44,6 @@ export default defineNuxtConfig({
   ogImage: { enabled: false },
   compatibilityDate: '2024-07-24',
   schemaOrg: {
-    siteUrl: 'http://ziubinski.pl/',  // Podaj URL swojej witryny
+    siteUrl: 'http://ziubinski.pl/', 
   },
 });

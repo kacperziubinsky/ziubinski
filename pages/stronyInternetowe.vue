@@ -7,7 +7,7 @@
 
   <section class="grid container">
     <div class="img">
-      <img src="../assets/img/economic.png" alt="Baselinker" class="page-image">
+      <img src="../assets/img/economic.png" alt="Tworzenie Stron Internetowych" title="Tworzenie Stron Internetowych" class="page-image">
 
     </div>
 
@@ -23,7 +23,7 @@
       <p>Każdy projekt witryny, który podejmuję, jest dla mnie wyjątkowy. Dzięki bogatemu doświadczeniu i szerokim umiejętnościom, stawiam na indywidualne podejście do każdej realizacji. Wierzę, że każda strona internetowa powinna być niepowtarzalna i w pełni dopasowana do potrzeb klienta. Dlatego każdy projekt tworzę z pasją i dbałością o szczegóły, uwzględniając unikalne wymagania i oczekiwania. Moim celem jest stworzenie strony, która nie tylko wyróżnia się estetyką, ale także funkcjonalnością i intuicyjnością, zapewniając użytkownikom doskonałe wrażenia.</p>
     </div>
     <div class="img">
-      <img src="../assets/img/e-commerce_3.png" alt="Baselinker" class="page-image">
+      <img src="../assets/img/e-commerce_3.png" alt="Projektowanie stron internetowych" title="Projektowanie stron internetowych" class="page-image">
 
     </div>
   </section>
@@ -31,7 +31,7 @@
   <div class="rounded">
     <section class="grid container">
       <div class="img">
-        <img src="../assets/img/e-commerce_2.png" alt="Baselinker" class="page-image">
+        <img src="../assets/img/e-commerce_2.png" alt="Ziubiński Strony" title="Ziubiński Strony" class="page-image">
 
       </div>
 
@@ -48,7 +48,7 @@
         <p>W mojej ofercie znajdą Państwo również abonamentową usługę zarządzania dotychczasowymi witrynami. W ramach tej usługi zadbam o stabilność, bezpieczeństwo i aktualizację treści na istniejącej witrynie. <strong>Wybierając to rozwiązanie, nie muszą Państwo samodzielnie zarządzać stroną,</strong> dzięki czemu oszczędzacie mnóstwo czasu.</p>
       </div>
       <div class="img">
-        <img src="../assets/img/app2.png" alt="Baselinker" class="page-image">
+        <img src="../assets/img/app2.png" alt="Administracja stronami internetowymi" title="Administracja stronami internetowymi" class="page-image">
 
       </div>
     </section>
@@ -64,15 +64,43 @@ const breadcrumbs = [
 ];
 
 useSeoMeta({
-  title: 'Tworzenie Stron Internetowych - Profesjonalne Usługi',
-  description: 'Profesjonalne tworzenie stron internetowych, które pomogą Ci dotrzeć do nowych klientów i zwiększyć widoczność Twojego biznesu online. Skontaktuj się z nami, aby dowiedzieć się więcej!'
+  title: 'Tworzenie Stron Internetowych',
+  description: 'Profesjonalne tworzenie stron internetowych, które pomogą Ci dotrzeć do nowych klientów i zwiększyć widoczność Twojego biznesu online. Skontaktuj się z nami, aby dowiedzieć się więcej!',
+  keywords: ['Tworzenie Stron Internetowych', 'Projektowanie stron internetowych', 'Strony Internetowe', 'Administracja stronami internetowymi'],
+  image: 'https://ziubinski.pl/socialmedia-image.jpg',
+  url: 'https://ziubinski.pl/tworzenie-stron-internetowych'
 })
 
 definePageMeta({
-  path: '/tworzenie-stron-internetowych' 
-})
+  path: '/tworzenie-stron-internetowych',
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Tworzenie Stron Internetowych ',
+    description: 'Profesjonalne tworzenie stron internetowych, które pomogą Ci dotrzeć do nowych klientów i zwiększyć widoczność Twojego biznesu online. Skontaktuj się z nami, aby dowiedzieć się więcej!',
+    image: 'https://ziubinski.pl/socialmedia-image.jpg',  
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.5',
+      reviewCount: '10'
+    },
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'USD',
+      price: '0',  
+      itemCondition: 'https://schema.org/NewCondition'
+    }
+  },
+  head: {
+    meta: [
+      { property: 'og:title', content: 'Tworzenie Stron Internetowych' },
+      { property: 'og:description', content: 'Profesjonalne tworzenie stron internetowych, które pomogą Ci dotrzeć do nowych klientów i zwiększyć widoczność Twojego biznesu online. Skontaktuj się z nami, aby dowiedzieć się więcej!' },
+      { property: 'og:image', content: 'https://ziubinski.pl/socialmedia-image.jpg' },
+      { property: 'og:url', content: 'https://ziubinski.pl/tworzenie-stron-internetowych' },
+      { property: 'og:site_name', content: 'Kacper Ziubiński' },
+      { name: 'robots', content: 'index, follow' }
 
+    ]
+  }
+});
 </script>
-
-<style scoped>
-</style>

@@ -7,7 +7,7 @@
 
   <section class="grid container">
     <div class="img">
-      <img src="../assets/img/e-commerce_4.png" alt="Co to seo?" class="page-image">
+      <img src="../assets/img/e-commerce_4.png" alt="Co to seo?" title="Co to SEO?" class="page-image">
 
     </div>
 
@@ -23,7 +23,7 @@
       <p>Proces pozycjonowania stron internetowych jest kompleksowy i składa się z wielu elementów. Obejmuje on zarówno optymalizację on-page, jak i off-page. Optymalizacja on-page to działania wykonywane bezpośrednio na stronie, takie jak tworzenie wartościowych treści, poprawa struktury strony, dodawanie meta tagów, nagłówków oraz linków wewnętrznych. Z kolei optymalizacja off-page to działania poza stroną, mające na celu zwiększenie jej autorytetu w oczach wyszukiwarek. Obejmuje to zdobywanie linków zewnętrznych, udzielanie się w mediach społecznościowych oraz tworzenie kampanii content marketingowych. Obie te strategie razem pomagają w osiągnięciu lepszych pozycji w wynikach wyszukiwania i przyciąganiu większej liczby odwiedzających.</p>
     </div>
     <div class="img">
-      <img src="../assets/img/seo.png" alt="Co to seo?" class="page-image">
+      <img src="../assets/img/seo.png" alt="Na czym polega pozycjonowanie?" title="Na czym polega pozycjonowanie?" class="page-image">
 
     </div>
   </section>
@@ -31,7 +31,7 @@
   <div class="rounded">
     <section class="grid container">
       <div class="img">
-        <img src="../assets/img/e-commerce_3.png" alt="Co to seo?" class="page-image">
+        <img src="../assets/img/e-commerce_3.png" alt="Pozycjonowanie Stron Internetowych" title="Pozycjonowanie Stron Internetowych" class="page-image">
 
       </div>
 
@@ -47,7 +47,7 @@
         <p>Koszt pozycjonowania SEO może znacznie się różnić w zależności od wielu czynników, takich jak konkurencyjność branży, zakres usług, a także konkretne potrzeby i cele Twojej firmy. W zależności od agencji SEO i wybranych usług, koszty mogą wynosić od kilkuset do kilku tysięcy złotych miesięcznie. Ważne jest jednak pamiętanie, że SEO to inwestycja długoterminowa, której efekty nie są natychmiastowe, ale mogą przynieść znaczne korzyści w postaci zwiększonego ruchu i wyższych przychodów z organicznego ruchu na stronie.</p>
       </div>
       <div class="img">
-        <img src="../assets/img/e-commerce_1.png" alt="Co to seo?" class="page-image">
+        <img src="../assets/img/e-commerce_1.png" alt="Ile kosztuje pozycjonowanie?" title="Ile kosztuje pozycjonowanie?" class="page-image">
 
       </div>
     </section>
@@ -63,11 +63,43 @@ const breadcrumbs = [
 ];
 
 useSeoMeta({
-  title: 'Pozycjonowanie SEO - Profesjonalne Usługi',
-  description: 'Profesjonalne pozycjonowanie SEO, które pomoże Twojej stronie internetowej osiągnąć wyższe pozycje w wynikach wyszukiwania i przyciągnąć więcej klientów. Skontaktuj się z nami, aby dowiedzieć się więcej!'
+  title: 'Pozycjonowanie SEO',
+  description: 'Profesjonalne pozycjonowanie SEO, które pomoże Twojej stronie internetowej osiągnąć wyższe pozycje w wynikach wyszukiwania i przyciągnąć więcej klientów. Skontaktuj się z nami, aby dowiedzieć się więcej!',
+  keywords: ['Pozycjonownaie SEO', 'Pozycjonowanie Stron Internetowych'],
+  image: 'https://ziubinski.pl/socialmedia-image.jpg',
+  url: 'https://ziubinski.pl/pozycjonowanie-seo'
 })
 
 definePageMeta({
-  path: '/pozycjonowanie-seo' 
-})
+  path: '/pozycjonowanie-seo',
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Pozycjonowanie SEO',
+    description: 'Profesjonalne pozycjonowanie SEO, które pomoże Twojej stronie internetowej osiągnąć wyższe pozycje w wynikach wyszukiwania i przyciągnąć więcej klientów. Skontaktuj się z nami, aby dowiedzieć się więcej!',
+    image: 'https://ziubinski.pl/socialmedia-image.jpg',  
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.5',
+      reviewCount: '10'
+    },
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'USD',
+      price: '0',  
+      itemCondition: 'https://schema.org/NewCondition'
+    }
+  },
+  head: {
+    meta: [
+      { property: 'og:title', content: 'Pozycjonowanie SEO' },
+      { property: 'og:description', content: 'Profesjonalne pozycjonowanie SEO, które pomoże Twojej stronie internetowej osiągnąć wyższe pozycje w wynikach wyszukiwania i przyciągnąć więcej klientów. Skontaktuj się z nami, aby dowiedzieć się więcej!' },
+      { property: 'og:image', content: 'https://ziubinski.pl/socialmedia-image.jpg' },
+      { property: 'og:url', content: 'https://ziubinski.pl/pozycjonowanie-seo' },
+      { property: 'og:site_name', content: 'Kacper Ziubiński' },
+      { name: 'robots', content: 'index, follow' }
+
+    ]
+  }
+});
 </script>
