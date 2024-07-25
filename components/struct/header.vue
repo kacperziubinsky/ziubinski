@@ -25,15 +25,15 @@
           <NuxtLink to="/o-mnie" @click="closeMenu">O mnie</NuxtLink>
         </li>
         <li class="menu-item">
-          <a href="#" @click="closeMenu">Portfolio</a>
+          <NuxtLink to="/realizacje" @click="closeMenu">Realizacje</NuxtLink>
         </li>
         <li class="menu-item">
-          <a href="#" @click="closeMenu">Kontakt</a>
+          <NuxtLink to="/kontakt" @click="closeMenu">Kontakt</NuxtLink>
         </li>
       </ul>
     </nav>
     <div class="contact-button">
-      <a href="#">Zadzwoń</a>
+      <a href="tel:+48535558333">Zadzwoń</a>
     </div>
   </header>
 </template>

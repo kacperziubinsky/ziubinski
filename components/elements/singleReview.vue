@@ -1,6 +1,10 @@
 <template>
     <div class="service" @mouseover="rotateArrow(true)" @mouseleave="rotateArrow(false)">
       <span class="sub-title" :style="{ transform: arrowTransform }">
+        &bigstar;         
+        &bigstar;
+        &bigstar;
+        &bigstar;
         &bigstar;
       </span>
       <p>{{ content }}</p>
@@ -69,7 +73,7 @@
   
   h4 {
     font-size: 20px;
-    color: #444;
+    color: black;
     margin-top: 10px;
   }
   

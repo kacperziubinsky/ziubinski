@@ -14,13 +14,15 @@
             <p><strong>Edukacja jest dla mnie kluczowa</strong>. Wierzę, że <i><strong>człowiek, który się nie rozwija, zaczyna się cofać</strong></i>. Dlatego obecnie jestem studentem <strong>Uniwersytetu w Siedlcach</strong>, gdzie nieustannie poszerzam swoje umiejętności, studiując <strong>informatykę</strong>.</p>
         </div>
         <div class="img">
-
+          <img src="~/assets/img/photo.png" alt="Photo" class="page-image circle" />
         </div>
 
     </section>
   
     <section class="grid container">
-        <div class="img"></div>
+        <div class="img">
+          <img src="../assets/img/ziub.png" alt="Ziubiński Logo" class="page-image">
+        </div>
       <div class="text">
         <h2>Profesjonalne Tworzenie Stron</h2>
             <p>Od kilku lat współpracuję z wieloma klientami indywidualnymi oraz agencjami marketingowymi, uczestnicząc w licznych ambitnych projektach. <strong>Kluczem do sukcesu jest komunikacja</strong>. Dlatego podczas współpracy skupiam się na dokładnym poznaniu potrzeb klienta oraz jego celów biznesowych. Dzięki temu mogę dostarczać rozwiązania, które nie tylko spełniają, ale często przewyższają oczekiwania. <strong>Stawiam na kompleksowość, </strong>z tej racji mogą Państwo liczyć na wsparcie na każdym etapie realizacji projektu.</p>
@@ -60,5 +62,8 @@
   </script>
   
   <style scoped>
+  .circle{
+    border-radius: 50%;
+  }
   </style>
   

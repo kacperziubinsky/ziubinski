@@ -6,7 +6,10 @@
   </section>
 
   <section class="grid container">
-    <div class="img"></div>
+    <div class="img">
+      <img src="../assets/img/economic.png" alt="Baselinker" class="page-image">
+
+    </div>
 
     <div class="text">
       <h2>Czy warto założyć stronę internetową?</h2>
@@ -19,12 +22,18 @@
       <h2>Projektowanie stron internetowych</h2>
       <p>Każdy projekt witryny, który podejmuję, jest dla mnie wyjątkowy. Dzięki bogatemu doświadczeniu i szerokim umiejętnościom, stawiam na indywidualne podejście do każdej realizacji. Wierzę, że każda strona internetowa powinna być niepowtarzalna i w pełni dopasowana do potrzeb klienta. Dlatego każdy projekt tworzę z pasją i dbałością o szczegóły, uwzględniając unikalne wymagania i oczekiwania. Moim celem jest stworzenie strony, która nie tylko wyróżnia się estetyką, ale także funkcjonalnością i intuicyjnością, zapewniając użytkownikom doskonałe wrażenia.</p>
     </div>
-    <div class="img"></div>
+    <div class="img">
+      <img src="../assets/img/e-commerce_3.png" alt="Baselinker" class="page-image">
+
+    </div>
   </section>
 
   <div class="rounded">
     <section class="grid container">
-      <div class="img"></div>
+      <div class="img">
+        <img src="../assets/img/e-commerce_2.png" alt="Baselinker" class="page-image">
+
+      </div>
 
       <div class="text">
         <h2>Jak edytować stronę internetową?</h2>
@@ -38,7 +47,10 @@
         <h2>Administracja stronami internetowymi</h2>
         <p>W mojej ofercie znajdą Państwo również abonamentową usługę zarządzania dotychczasowymi witrynami. W ramach tej usługi zadbam o stabilność, bezpieczeństwo i aktualizację treści na istniejącej witrynie. <strong>Wybierając to rozwiązanie, nie muszą Państwo samodzielnie zarządzać stroną,</strong> dzięki czemu oszczędzacie mnóstwo czasu.</p>
       </div>
-      <div class="img"></div>
+      <div class="img">
+        <img src="../assets/img/app2.png" alt="Baselinker" class="page-image">
+
+      </div>
     </section>
   </div>
 </template>

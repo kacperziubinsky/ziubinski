@@ -1,15 +1,14 @@
 <template>
-    <div class="grid">
-      <div class="contact">
-        <h3>Skontaktuj się ze mną!</h3>
-        <h4><Strong>Dane firmy</Strong></h4>
-        <p><strong>Nazwa: </strong> Kacper Ziubiński</p>
-        <p><strong>NIP: </strong>5322109030</p>
-        <p><strong>REGON: </strong>527302492</p>
-        <p><strong>Adres: </strong>ul. 3 Maja 85, 05-340 Rudzienko        </p>
-        <div class="social-media">
-          <h4>Kontakt</h4>
-          <div class="contact-info">
+  <div class="grid">
+    <div class="contact">
+      <p class="title">Skontaktuj się ze mną!</p>
+      <p><strong>Nazwa: </strong> Kacper Ziubiński</p>
+      <p><strong>NIP: </strong>5322109030</p>
+      <p><strong>REGON: </strong>527302492</p>
+      <p><strong>Adres: </strong>ul. 3 Maja 85, 05-340 Rudzienko</p>
+      <div class="social-media">
+        <h4>Kontakt</h4>
+        <div class="contact-info">
           <p>
             <a href="tel:+48535558333">
               <i class="fa fa-phone"></i> +48 535 558 333
@@ -20,50 +19,58 @@
               <i class="fa fa-envelope"></i> kontakt@ziubinski.pl
             </a>
           </p>
- 
         </div>
-        </div>
-      </div>
-      <div class="form">
-        <h3>Formularz kontaktowy</h3>
-        <form @submit.prevent="handleSubmit">
-          <div class="form-group">
-            <label for="name">Imię i nazwisko*</label>
-            <input type="text" id="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email*</label>
-            <input type="email" id="email" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Telefon</label>
-            <input type="tel" id="phone" />
-          </div>
-          <div class="form-group">
-            <label for="message">Wiadomość*</label>
-            <textarea id="message" rows="5" required></textarea>
-          </div>
-          <button type="submit">Wyślij</button>
-        </form>
       </div>
     </div>
-  </template>
+    <div class="form">
+      <h3>Formularz kontaktowy</h3>
+      <form @submit.prevent="handleSubmit">
+        <div class="form-group">
+          <label for="name">Imię i nazwisko*</label>
+          <input type="text" v-model="form.name" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email*</label>
+          <input type="email" v-model="form.email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon</label>
+          <input type="tel" v-model="form.phone" id="phone" />
+        </div>
+        <div class="form-group">
+          <label for="message">Wiadomość*</label>
+          <textarea v-model="form.message" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Wyślij</button>
+      </form>
+    </div>
+  </div>
+</template>
 
 <script>
 export default {
   name: 'ContactForm',
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      }
+    };
+  },
   methods: {
-    handleSubmit() {
-      alert('Form submitted');
+    async handleSubmit() {
+
+        alert('Nie udało się wysłać emaila');
+
     }
   }
 };
 </script>
 
-
 <style scoped>
-
-
 .contact {
   padding: 20px;
   border-radius: 10px;
@@ -75,7 +82,7 @@ export default {
   margin-bottom: 15px;
 }
 
-.contact h4{
+.contact h4 {
   font-size: 1.25rem
 }
 
@@ -86,10 +93,6 @@ export default {
 .contact a {
   color: #007bff;
   text-decoration: none;
-}
-
-.contact a:hover {
-  text-decoration: underline;
 }
 
 .social-media h4 {
@@ -126,36 +129,55 @@ export default {
 }
 
 button {
-  background-color: #007bff;
+  background-color: rgb(161, 196, 253);
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 500ms;
 }
 
 button:hover {
   background-color: #0056b3;
 }
 
-.contact-info a{
+.contact-info a {
   color: black;
   text-decoration: none;
   font-size: 21px;
 }
 
-.contact-info .fa{
+.contact-info .fa {
   border: 1px solid black;
   padding: 10px;
   border-radius: 20px;
 }
 
-.contact-info p{
+.contact-info p {
   transition: all 500ms;
 }
 
-.contact-info p:hover{
+.contact-info p:hover {
   transform: translateY(-1px);
 }
 
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.centered {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+  margin-top: 1rem;
+}
 </style>

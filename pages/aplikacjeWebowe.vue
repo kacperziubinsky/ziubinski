@@ -6,7 +6,9 @@
   </section>
 
   <section class="grid container">
-    <div class="img"></div>
+    <div class="img">
+      <img src="../assets/img/economic.png" alt="Baselinker" class="page-image">
+    </div>
 
     <div class="text">
       <h2>Co to aplikacja webowa?</h2>
@@ -19,12 +21,18 @@
       <h2>Dlaczego warto inwestować w aplikacje webowe?</h2>
       <p><strong>Aplikacje webowe</strong> oferują wiele korzyści w porównaniu do tradycyjnego oprogramowania. Przede wszystkim są dostępne z dowolnego miejsca i urządzenia, co zwiększa mobilność i wygodę użytkowników. Dodatkowo, dzięki centralizacji danych na serwerze, możliwe jest łatwe zarządzanie aktualizacjami i utrzymaniem oprogramowania. <strong>Wysoka skalowalność i elastyczność</strong> aplikacji webowych pozwala na szybkie dostosowanie ich funkcji do zmieniających się potrzeb biznesowych.</p>
     </div>
-    <div class="img"></div>
+    <div class="img">
+      <img src="../assets/img/app2.png" alt="Baselinker" class="page-image">
+
+    </div>
   </section>
 
   <div class="rounded">
     <section class="grid container">
-      <div class="img"></div>
+      <div class="img">
+        <img src="../assets/img/e-commerce_3.png" alt="Zarządzanie sklepami Internetowymi" class="page-image">
+
+      </div>
 
       <div class="text">
         <h2>Bezpieczeństwo aplikacji webowych</h2>
@@ -37,7 +45,9 @@
         <h2>Jak aplikacje webowe mogą wspierać rozwój Twojego biznesu?</h2>
         <p>Aplikacje webowe mogą znacząco wpłynąć na rozwój biznesu poprzez <strong>automatyzację procesów</strong>, <strong>zwiększenie efektywności</strong> oraz <strong>poprawę komunikacji</strong> wewnętrznej i z klientami. Dzięki integracji z innymi narzędziami biznesowymi i analizie danych w czasie rzeczywistym, aplikacje te wspierają podejmowanie lepszych decyzji oraz umożliwiają skuteczniejsze zarządzanie zasobami i operacjami firmy. <strong>Inwestycja w aplikacje webowe</strong> to krok w stronę nowoczesności i optymalizacji działań biznesowych.</p>
       </div>
-      <div class="img"></div>
+      <div class="img">
+        <img src="../assets/img/app1.png" alt="Baselinker" class="page-image">
+      </div>
     </section>
   </div>
 </template>

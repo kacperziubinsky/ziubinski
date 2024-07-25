@@ -1,5 +1,5 @@
 <template>
-    <div class="step">
+    <div class="step" >
       <div class="step-header" @click="toggle">
         <span class="step-number">{{ step }}</span>
         <span class="arrow" :class="{ 'open': isOpen }">▼</span>

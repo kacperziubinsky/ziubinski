@@ -6,7 +6,9 @@
   </section>
 
   <section class="grid container">
-    <div class="img"></div>
+    <div class="img">
+      <img src="../assets/img/baselinker.png" alt="Baselinker" class="page-image">
+    </div>
 
     <div class="text">
       <h2>Czym jest Baselinker?</h2>
@@ -19,12 +21,16 @@
       <h2>Integracja przesyłek Baselinker</h2>
       <p>Poza możliwością obsługi zamówień, Baselinker umożliwia integrację z firmami kurierskimi, co sprawia, że generowanie etykiet oraz zarządzanie statusami przesyłek jest jeszcze prostsze. <strong>Wygeneruj list przewozowy jednym kliknięciem!</strong> Baselinker w swojej ofercie posiada szeroką gamę firm kurierskich, takich jak: <strong>InPost, UPS, FedEx, Orlen Paczka</strong> oraz integrację z <strong>wysyłkami Allegro.</strong></p>
     </div>
-    <div class="img"></div>
+    <div class="img">
+      <img src="../assets/img/delivery.png" alt="Baselinker" class="page-image">
+    </div>
   </section>
 
   <div class="rounded">
     <section class="grid container">
-      <div class="img"></div>
+      <div class="img">
+        <img src="../assets/img/economic.png" alt="Baselinker" class="page-image">
+      </div>
 
       <div class="text">
         <h2>Intuicyjny panel</h2>
@@ -37,7 +43,10 @@
         <h2>Możliwość integracji z hurtowniami</h2>
         <p>Baselinker umożliwia także integrację z hurtowniami, co pozwala na automatyzację procesów zamówień i synchronizację stanów magazynowych. Dzięki tej funkcji możesz bez trudu zarządzać produktami, zamówieniami i dostawami, co przyspiesza procesy logistyczne i zwiększa efektywność operacyjną Twojego biznesu.</p>
       </div>
-      <div class="img"></div>
+      <div class="img">
+        <img src="../assets/img/e-commerce_1.png" alt="Baselinker" class="page-image">
+
+      </div>
     </section>
   </div>
 </template>
@@ -53,9 +62,36 @@ const breadcrumbs = [
 useSeoMeta({
   title: 'Integracja Baselinker - Rozwiązania E-commerce',
   description: 'Optymalizuj sprzedaż i zarządzaj zamówieniami dzięki Baselinker. Integracja z popularnymi CMS i platformami sprzedażowymi, łatwe zarządzanie przesyłkami oraz intuicyjny panel użytkownika. Skontaktuj się z nami, aby dowiedzieć się więcej!'
-})
+});
 
 definePageMeta({
-  path: '/integracja-baselinker'
-})
+  path: '/integracja-baselinker',
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Integracja Baselinker',
+    description: 'Baselinker to narzędzie do integracji e-commerce i zarządzania sprzedażą. Oferuje integrację z CMS, platformami sprzedażowymi i firmami kurierskimi.',
+    image: 'https://example.com/path-to-image.jpg',  // Zastąp rzeczywistym URL obrazka
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.5',
+      reviewCount: '10'
+    },
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'USD',
+      price: '0',  
+      itemCondition: 'https://schema.org/NewCondition'
+    }
+  },
+  head: {
+    meta: [
+      { property: 'og:title', content: 'Integracja Baselinker - Rozwiązania E-commerce' },
+      { property: 'og:description', content: 'Optymalizuj sprzedaż i zarządzaj zamówieniami dzięki Baselinker. Integracja z popularnymi CMS i platformami sprzedażowymi, łatwe zarządzanie przesyłkami oraz intuicyjny panel użytkownika.' },
+      { property: 'og:image', content: 'https://example.com/path-to-image.jpg' },
+      { property: 'og:url', content: 'https://new.ziubinski.pl/integracja-baselinker' },
+      { property: 'og:site_name', content: 'Kacper Ziubiński' }
+    ]
+  }
+});
 </script>

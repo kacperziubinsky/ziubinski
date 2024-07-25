@@ -23,6 +23,7 @@ body{
     column-gap: 50px;
     row-gap: 50px;
     margin-top: 50px;
+    align-items: center;
 }
 
 .about{
@@ -64,8 +65,14 @@ body{
     align-items: center;
     justify-content: center;
     gap: 1.25rem;
-    background: white;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0px 0px 20px 5px rgb(238, 238, 238);
+
 }
+
+
 p{
     line-height: 2;
 }
@@ -91,5 +98,29 @@ p{
         column-gap: 50px;
         row-gap: 50px;
         margin-top: 50px;
+    }
+    .grid .img{
+        order: 2;
+    }
+    .grid .text{
+        order: 1;
+    }
+    .page-image{
+        max-width: 250px;
+        
+    }
+}
+
+.page-image{
+    max-height: 300px;
+}
+
+.grid .img{
+    text-align: center;
+}
+
+@media (max-width: 400px) { 
+    .hero{
+        font-size: 0.75rem;
     }
 }

@@ -1,23 +1,41 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: {enabled: true},
-  // Globalne ustawienia CSS
-  css: ['~/assets/css/main.css'],
+  devtools: { enabled: true },
 
-  // Tryb generacji aplikacji statycznej
-  target: 'static',
-
-  // Tryb SPA
-  ssr: false,
-
-  // Konfiguracja serwera deweloperskiego
-  server: {
-    port: 3030, // Port serwera
-    host: 'localhost' // Host serwera
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    },
   },
 
-  // Konfiguracja certyfikatu SSL (jeśli wymagane)
+  modules: ['nuxt-schema-org', '@nuxtjs/seo', 'nuxt-aos'],
+
+
+  css: ['~/assets/css/main.css'],
+
+  sitemap: {
+    enabled: true,
+    site: {
+      url: 'https://ziubinski.pl',
+    },
+  },
+
+
+
+  target: 'static',
+  ssr: false,
+
+  server: {
+    port: 3030,
+    host: 'localhost',
+  },
+
   serverMiddleware: [
-    'redirect-ssl'
+    'redirect-ssl',
   ],
+  ogImage: { enabled: false },
+  compatibilityDate: '2024-07-24',
+  schemaOrg: {
+    siteUrl: 'http://ziubinski.pl/',  // Podaj URL swojej witryny
+  },
 });

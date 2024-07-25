@@ -6,7 +6,7 @@
         class="image"
         :style="getStyle(index)"
       >
-        <img :src="image" alt="rotating graphic" />
+        <img :src="image" alt="">
       </div>
     </div>
   </template>
@@ -21,6 +21,8 @@
           'https://ziubinski.hostline.net.pl/nowa/img/php.png',
           'https://ziubinski.hostline.net.pl/nowa/img/vue.png',
           'https://ziubinski.hostline.net.pl/nowa/img/seo.png',
+          'https://ziubinski.hostline.net.pl/nowa/img/wordpress.png',
+
         ],
         radius: 100, 
         centerX: 150,
@@ -45,7 +47,7 @@
       },
       startRotation() {
         setInterval(() => {
-          this.angle += 0.1; // Prędkość obracania
+          this.angle += 0.05; // Prędkość obracania
         }, 16); // Częstotliwość odświeżania (około 60 klatek na sekundę)
       },
     },
@@ -57,10 +59,14 @@
     position: relative;
     width: 300px;
     height: 300px;
+    background-image: url('./logo-macbook.png');
+    background-size: cover;
+    background-position: center;
   }
   .image img {
     width: 50px;
     height: 50px;
   }
+
   </style>
   

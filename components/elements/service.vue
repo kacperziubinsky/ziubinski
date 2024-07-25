@@ -1,5 +1,5 @@
 <template>
-  <div class="service" @mouseover="rotateArrow(true)" @mouseleave="rotateArrow(false)">
+  <div class="service" @mouseover="rotateArrow(true)" @mouseleave="rotateArrow(false)" data-aos="zoom-in">
     <h2>{{ title }}</h2>
     <span class="sub-title">{{ subtitle }}</span>
     <p>{{ content }}</p>
@@ -48,6 +48,7 @@ export default {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
+  background-color: white;
 }
 
 .service:hover{
