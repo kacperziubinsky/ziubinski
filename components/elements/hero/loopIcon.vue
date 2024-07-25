@@ -59,7 +59,7 @@
     position: relative;
     width: 300px;
     height: 300px;
-    background-image: url('./logo-macbook.png');
+    background-image: url('./logo-macbook.webp');
     background-size: cover;
     background-position: center;
   }

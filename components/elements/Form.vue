@@ -62,9 +62,19 @@ export default {
   },
   methods: {
     async handleSubmit() {
-
-        alert('Nie udało się wysłać emaila');
-
+      try {
+        const response = await fetch('contact_form.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams(this.form)
+        });
+        const result = await response.text();
+        alert(result);
+      } catch (error) {
+        alert('Błąd: ' + error.message);
+      }
     }
   }
 };
@@ -76,6 +86,7 @@ export default {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background: white;
+  height: 100%;
 }
 
 .contact h3 {

@@ -1,7 +1,7 @@
 <template>
     <div class="project" data-aos="zoom-in">
       <img :src="photo" :alt="name" class="project-image"  />
-      <span @click="changeThumb" class="btn">Zmień typ</span>
+      <span @click="changeThumb" class="btn">Zmień widok</span>
       <h3>{{ name }}</h3>
       <p>{{ description }}</p>
     </div>

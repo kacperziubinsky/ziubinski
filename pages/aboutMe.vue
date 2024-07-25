@@ -89,6 +89,4 @@ definePageMeta({
 .circle {
   border-radius: 50%;
 }
-
-
 </style>

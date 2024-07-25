@@ -10,10 +10,30 @@ export default defineNuxtConfig({
           id: 'cookieyes',
           type: 'text/javascript',
           src: 'https://cdn-cookieyes.com/client_data/f5e0f72d6611e28bf3f27106/script.js',
-          defer: true 
+          defer: true
+        },
+        {
+          hid: 'gtag',
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-D9FKY9MKWB',
+          async: true
+        },
+        {
+          hid: 'gtag-init',
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-D9FKY9MKWB');
+          `,
+          type: 'text/javascript',
+          async: true
         }
-      ]
-    },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/png', href: 'favicon.ico' }
+      ],
+      __dangerouslyDisableSanitizers: ['script']
+    }
   },
 
   modules: ['nuxt-schema-org', '@nuxtjs/seo', 'nuxt-aos'],

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="main-circle">
-      <img src="~/assets/img/photo.png" alt="Photo" class="circle-image" />
+      <img src="~/assets/img/photo.webp" alt="Photo" class="circle-image" />
     </div>
 
     <div class="circle-1 circle"></div>

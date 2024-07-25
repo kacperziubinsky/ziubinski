@@ -27,30 +27,20 @@
     </section>
     
     
-    <section class="services container">
-        <h2 class="subtitle centered">Kacper Ziubiński Strony Internetowe</h2>
-        <p class="title centered">Zrealizowane projekty</p>
-        <div class="projects">
-            <SingleProject 
-            name="Projekt 1"
-            desktop="https://ziubinski.hostline.net.pl/nowa/img/400x300.png"
-            mobile="https://ziubinski.hostline.net.pl/nowa/img/300x400.png"
-            description="To jest opis projektu 1." 
-            />
-            <SingleProject 
-            name="Projekt 1"
-            desktop="https://ziubinski.hostline.net.pl/nowa/img/400x300.png"
-            mobile="https://ziubinski.hostline.net.pl/nowa/img/300x400.png"
-            description="To jest opis projektu 1." 
-            />
-            <SingleProject 
-            name="Projekt 1"
-            desktop="https://ziubinski.hostline.net.pl/nowa/img/400x300.png"
-            mobile="https://ziubinski.hostline.net.pl/nowa/img/300x400.png"
-            description="To jest opis projektu 1." 
-            />
-        </div>
-    </section>
+  <section class="services container">
+    <h2 class="subtitle centered">Kacper Ziubiński Strony Internetowe</h2>
+    <p class="title centered">Zrealizowane projekty</p>
+    <div class="projects">
+      <SingleProject 
+        v-for="project in firstThreeProjects"
+        :key="project.name"
+        :name="project.name"
+        :desktop="project.desktop"
+        :mobile="project.mobile"
+        :description="project.description"
+      />
+    </div>
+  </section>
     
         <section class="about container rounded" data-aos="fade-up">
             <div class="quality" >
@@ -95,25 +85,40 @@ import SingleProject from '~/components/elements/singleProject.vue';
 import Form from '~/components/elements/Form.vue';
 import SingleReview from '~/components/elements/singleReview.vue';
 import HeroSection from '~/components/elements/heroSection.vue';
-export default{
-    components:{
-        service,
-        step,
-        circleImage,
-        SingleProject,
-        Form,
-        SingleReview,
-        HeroSection
-    }
-}
+export default {
+  components: {
+    service,
+    step,
+    circleImage,
+    SingleProject,
+    Form,
+    SingleReview,
+    HeroSection
+  },
+  setup() {
+    const projects = ref([]);
+
+    onMounted(async () => {
+      const response = await fetch('/projects.json');
+      const data = await response.json();
+      projects.value = data;
+    });
+
+    // Get the first three projects
+    const firstThreeProjects = computed(() => projects.value.slice(0, 3));
+
+    return { firstThreeProjects };
+  }
+};
 
 useSeoMeta({
-  title: 'Agnecja Interaktywna',
-  description: 'Profesjonalne usługi związane z tworzeniem stron Internetowych, Rozwiązań E-commerce. Skontaktuj się z nami, aby dowiedzieć się więcej!',
-  keywords: ['Agencja Interaktywna', 'Kacper ziubiński'],
+  title: 'Agencja Interaktywna',
+  description: 'Profejsonalne usługi związane z tworzeniem stron internetowych, sklepów, pozycjonowaniem seo, jak i również tworzeniem dedykowanych aplikacji ',
+  keywords: ['Kacper Ziubiński', 'Projektowanie stron internetowych', 'Strony Ziubiński', 'Administracja stronami internetowymi'],
   image: 'https://ziubinski.pl/socialmedia-image.jpg',
   url: 'https://ziubinski.pl/'
 })
+
 
 definePageMeta({
   path: '/',

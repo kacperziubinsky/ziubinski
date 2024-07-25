@@ -7,7 +7,7 @@
 
   <section class="grid container">
     <div class="img">
-      <img src="../assets/img/e-commerce_3.png" alt="Co to landing page?" title="Co to landing page?" class="page-image">
+      <img src="../assets/img/e-commerce_3.webp" alt="Co to landing page?" title="Co to landing page?" class="page-image">
     </div>
     <div class="text">
       <h2>Co to Landing Page?</h2>
@@ -21,14 +21,14 @@
       <p>Witryny tego typu często przedstawiają jedną z usług danej firmy, zachęcając tym samym do bezpośredniego kontaktu lub innej interakcji. Landing page są idealne do prowadzenia kampanii marketingowych, takich jak promocje, oferty specjalne czy premiery nowych produktów. Dzięki swojej prostocie i ukierunkowanemu przekazowi, landing page mogą skutecznie przyciągać uwagę i przekonywać odwiedzających do podjęcia konkretnej akcji, takiej jak zapisanie się na newsletter, pobranie e-booka, wypełnienie formularza kontaktowego czy dokonanie zakupu.</p>
     </div>
     <div class="img">
-      <img src="../assets/img/seo.png" alt="Strona OnePage" title="Strona One Page" class="page-image">
+      <img src="../assets/img/seo.webp" alt="Strona OnePage" title="Strona One Page" class="page-image">
     </div>
   </section>
 
   <div class="rounded">
     <section class="grid container">
       <div class="img">
-        <img src="../assets/img/economic.png" alt="Pozycjonowanie Landing Page" title="Pozycjonowanie Landing Page" class="page-image">
+        <img src="../assets/img/economic.webp" alt="Pozycjonowanie Landing Page" title="Pozycjonowanie Landing Page" class="page-image">
       </div>
       <div class="text">
         <h2>Pozycjonowanie Landing Page</h2>
@@ -42,7 +42,7 @@
         <p>Stworzenie strony wizytówki może okazać się dobrym startem w kontekście promocji marki w sieci. Wybór tego rozwiązania pozwoli na prostsze pozycjonowanie w szybszym tempie, a także z racji mniejszej złożoności strony jest ekonomiczniejsza od tradycyjnej strony internetowej. Landing page są również łatwiejsze do aktualizacji i modyfikacji, co pozwala na szybkie dostosowanie treści do zmieniających się potrzeb rynku i strategii marketingowych.</p>
       </div>
       <div class="img">
-        <img src="../assets/img/e-commerce_4.png" alt="Ile kosztuje landing page?" title="Ile kosztuje landing page?" class="page-image">
+        <img src="../assets/img/e-commerce_4.webp" alt="Ile kosztuje landing page?" title="Ile kosztuje landing page?" class="page-image">
       </div>
     </section>
   </div>
