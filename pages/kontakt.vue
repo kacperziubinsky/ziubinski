@@ -61,32 +61,7 @@ useSeoMeta({
 </script>
 
 <style scoped>
-.title {
-  font-size: 2rem;
-  font-weight: 800;
-}
-.subtitle {
-  font-size: 1rem;
-  font-weight: 600;
-}
-.centered {
-  text-align: center;
-}
-.container {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 20px;
-}
 
 @media (max-width: 897px) {
   .grid-portfolio {

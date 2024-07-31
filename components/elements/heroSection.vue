@@ -1,7 +1,7 @@
 <template>
   <section class="hero container" @mousemove="handleMouseMove">
     <div class="text">
-      <h1>Kacper Ziubiński</h1>
+      <h1>Tworzenie Stron WWW i Sklepów Internetowych </h1>
       <h2 class="animate-text">Tworzenie Stron Internetowych</h2>
       <h2 class="animate-text">Sklepy Internetowe</h2>
       <h2 class="animate-text">Usługi programistyczne</h2>

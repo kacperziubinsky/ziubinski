@@ -2,7 +2,7 @@
     <div class="project" data-aos="zoom-in">
       <img :src="photo" :alt="name" class="project-image"  />
       <span @click="changeThumb" class="btn">Zmień widok</span>
-      <h3>{{ name }}</h3>
+      <p class="project-title">{{ name }}</p>
       <p>{{ description }}</p>
     </div>
   </template>
@@ -87,7 +87,7 @@
     color: #fff;
   }
   
-  h3 {
+  .project-title {
     margin: 10px 0;
     font-size: 1.5em;
     color: #333;

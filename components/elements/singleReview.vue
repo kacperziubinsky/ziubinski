@@ -8,7 +8,7 @@
         &bigstar;
       </span>
       <p>{{ content }}</p>
-      <h4>{{ title }}</h4>
+      <p class="company-name ">{{ title }}</p>
     </div>
   </template>
   
@@ -71,7 +71,7 @@
     color: #666;
   }
   
-  h4 {
+  .company-name {
     font-size: 20px;
     color: black;
     margin-top: 10px;

@@ -7,7 +7,7 @@
       <p><strong>REGON: </strong>527302492</p>
       <p><strong>Adres: </strong>ul. 3 Maja 85, 05-340 Rudzienko</p>
       <div class="social-media">
-        <h4>Kontakt</h4>
+        <p class="main-title">Kontakt</p>
         <div class="contact-info">
           <p>
             <a href="tel:+48535558333">
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="form">
-      <h3>Formularz kontaktowy</h3>
+      <p class="title">Formularz kontaktowy</p>
       <form @submit.prevent="handleSubmit">
         <div class="form-group">
           <label for="name">Imię i nazwisko*</label>
@@ -89,11 +89,11 @@ export default {
   height: 100%;
 }
 
-.contact h3 {
+.contact .title {
   margin-bottom: 15px;
 }
 
-.contact h4 {
+.contact .main-title {
   font-size: 1.25rem
 }
 
@@ -106,7 +106,7 @@ export default {
   text-decoration: none;
 }
 
-.social-media h4 {
+.social-media .main-title {
   margin-top: 20px;
 }
 
@@ -117,7 +117,7 @@ export default {
   background: white;
 }
 
-.form h3 {
+.form .title {
   margin-bottom: 15px;
 }
 

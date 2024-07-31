@@ -32,7 +32,16 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/png', href: 'favicon.ico' }
       ],
-      __dangerouslyDisableSanitizers: ['script']
+      __dangerouslyDisableSanitizers: ['script'],
+      meta: [
+        { hid: 'description', name: 'description', content: 'Opis Twojej strony' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'Tworzenie Stron WWW i Sklepów Internetowych - Kacper Ziubiński' },
+        { property: 'og:description', content: 'Profejsonalne usługi związane z tworzeniem stron internetowych, sklepów oraz dedykowanych aplikacji Internetowych.' },
+        { property: 'og:image', content: 'https://ziubinski.pl/socialmedia-image.jpg' },
+        { property: 'og:url', content: 'https://ziubinski.pl' }
+      ]
+      
     }
   },
 
